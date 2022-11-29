@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+
+@font-face {
+  font-family: 'sugar__spiceregular';
+  src: url('sugar__spice_demo-webfont.woff2') format('woff2'),
+       url('sugar__spice_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+   font-family: 'Comfortaa', cursive;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: url(bg.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 99vw;
+    min-height: 90vh;
+    margin-top: 20px;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 30px;
+}
+
+
+
+.card-header{
+  background: #2c3a47;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #e66767;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.sm a:hover{
+  color: #e66767;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #e66767;
+  border: 2px solid #e66767;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background: #e66767;
+  color: #f2f2f2;
+}
+
+.card-footer{
+  background: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #e66767;
+}
+
+.item span{
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
+
+/*Site styling*/
+
+ .site-title{
+    background: url('./assets/about-header.jpg');
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+ .site-title h1, h3{
+    margin: .3rem;
+}
+
+.site-title h1{
+  font-size: 50px;
+}
+
+.site-title h3{
+  font-size: 30px;
+}
+
+ .site-title .btn{
+    margin: 1.8rem;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+
+ .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.site-content .post-content .post-title .post-btn{
+  border-radius: 0;
+  padding: .7rem 1.5rem;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+
+
+
+/*Nav bar*/
+
+ /* custom scroll bar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 20px;
+    }
+    ::selection{
+      background: rgb(0,123,255,0.3);
+      /* background:  #ffcccb; */
+    }
+    .content{
+      max-width: 1250px;
+      padding: 0 30px;             
+      font-size: 1px;       
+      font-family: 'Comfortaa', cursive;
+
+    }
+    .navbar{
+      position: fixed;
+      /* height: 10px; */
+      width: 100%;
+      
+      padding: 25px 0;
+      transition: all 0.3s ease;
+      margin-top: 0;
+      background: lightslategray;
+      color: black;
+    }
+    .navbar.sticky{
+      background: #1b1b1b;
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    }
+    .navbar .content{
+      display: flex;
+     
+      justify-content: space-between;
+    }
+    .navbar .logo a{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .navbar .menu-list{
+      display: inline-flex;
+    }
+    .menu-list li{
+      list-style: none;
+    }
+    .menu-list li a{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      margin-left: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .menu-list li a:hover{
+      color: #9fc4f5;
+    }
+    .banner{
+      background: grey;
+      height: 50vh;
+      
+    }
+    .about{
+      padding: 30px 0;
+    }
+    .about .title{
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .about p{
+      padding-top: 20px;
+      text-align: justify;
+    }
+    .icon{
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+    }
+    .menu-list .cancel-btn{
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+
+    
+    @media (max-width: 1230px) {
+      .content{
+        padding: 0 60px;
+      }
+    }
+    @media (max-width: 600px) {
+      .content{
+        padding: 0 40px;
+      }
+
+      .all{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .profile-card{
+        margin: 100px;
+      }
+    }
+    @media (max-width: 900px) {
+      .content{
+        padding: 0 30px;
+      }
+
+      .all{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 868px) {
+      body.disabled{
+        overflow: hidden;
+      }
+      .icon{
+        display: block;
+      }
+      .icon.hide{
+        display: none;
+      }
+      .navbar .menu-list{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+      }
+      .navbar.show .menu-list{
+        left: 0%;
+      }
+      .navbar .menu-list li{
+        margin-top: 45px;
+      }
+      .navbar .menu-list li a{
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .navbar.show .menu-list li a{
+        margin-left: 0px;
+      }
+    }
+    @media (max-width: 380px) {
+      .navbar .logo a{
+        font-size: 27px;
+      }
+    }
+
+    #company{
+        margin-left: 10px;
+    }    
+    
+    #Login{
+        background: none;
+        border: 1px solid var(--white);
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+
+    #story-title{
+      font-family: 'sugar__spiceregular';
+      font-size: 80px;
+      margin-bottom: 40%;
+  }
+  

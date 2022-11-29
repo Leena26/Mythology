@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+/* #header{
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+} */
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+/* .logo{
+    margin-top: 30px;
+    width: 100px;    
+} */
+.header-text{
+    max-width: 350px;
+    margin-top: 140px;
+}
+h1{
+    font-size: 34px;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+.common-btn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;    
+}
+
+
+
+
+
+/* Social Icons */
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor:pointer;
+}
+
+@media only screen and (max-width:770px){
+    #header{
+        background-image: none;
+    }
+    .container{
+        margin-right: 50;
+        margin-left: 50;
+    }
+    .logo{
+        margin-top: 27px;
+        width: 70px;    
+    }
+    .header-text{
+        margin-top: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+    }
+    .common-btn{
+        padding: 10px 16px;
+    }
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+    .about-left-col,.about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        max-width: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2{
+        font-size: 18px;
+   }
+   .feature-col{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    }
+    .course-left-col{
+        flex-basis: 100%;
+    }
+    .course-right-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .contact-left-col, .contact-right-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        margin-top: 50px;
+    }
+    .footer-left-col,.footer-right-col{
+        flex-basis: 100%;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+/* navbar*/
+
+    /* custom scroll bar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 20px;
+    }
+    ::selection{
+      background: rgb(0,123,255,0.3);
+      /* background:  #ffcccb; */
+    }
+    .content{
+      max-width: 1250px;
+      padding: 0 30px;
+      font-size: 1px;
+      font-family: 'Comfortaa', cursive;
+
+    }
+    .navbar{
+      position: fixed;
+      /* height: 10px; */
+      width: 100%;
+      z-index: 2;
+      padding: 15px 0;
+      transition: all 0.3s ease;
+      margin-top: 0;
+      background: rgb(243, 167, 116);
+      color: black;
+    }
+    .navbar.sticky{
+      background: #1b1b1b;
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    }
+    .navbar .content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .logo a{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .navbar .menu-list{
+      display: inline-flex;
+    }
+    .menu-list li{
+      list-style: none;
+    }
+    .menu-list li a{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      margin-left: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .menu-list li a:hover{
+      color: #adb8f7;
+    }
+    .banner{
+      background: grey;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .about{
+      padding: 30px 0;
+    }
+    .about .title{
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .about p{
+      padding-top: 20px;
+      text-align: justify;
+    }
+    .icon{
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+    }
+    .menu-list .cancel-btn{
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+    @media (max-width: 1230px) {
+      .content{
+        padding: 0 60px;
+      }
+    }
+    @media (max-width: 1100px) {
+      .content{
+        padding: 0 40px;
+      }
+    }
+    @media (max-width: 900px) {
+      .content{
+        padding: 0 30px;
+      }
+    }
+    @media (max-width: 868px) {
+      body.disabled{
+        overflow: hidden;
+      }
+      .icon{
+        display: block;
+      }
+      .icon.hide{
+        display: none;
+      }
+      .navbar .menu-list{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+      }
+      .navbar.show .menu-list{
+        left: 0%;
+      }
+      .navbar .menu-list li{
+        margin-top: 45px;
+      }
+      .navbar .menu-list li a{
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .navbar.show .menu-list li a{
+        margin-left: 0px;
+      }
+    }
+    @media (max-width: 380px) {
+      .navbar .logo a{
+        font-size: 27px;
+      }
+    }
+
+    #company{
+        margin-left: 10px;
+    }    
+    
+    #Login{
+        background: none;
+        border: 1px solid var(--white);
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+
+
+    .site-title{
+        background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7625bafd-36cc-4e10-b455-2e75ad2739a7/de89alv-71ac33f3-919d-4cbb-b749-51ad128b19a7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzYyNWJhZmQtMzZjYy00ZTEwLWI0NTUtMmU3NWFkMjczOWE3XC9kZTg5YWx2LTcxYWMzM2YzLTkxOWQtNGNiYi1iNzQ5LTUxYWQxMjhiMTlhNy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.zWSuxJ1wxpuiwml8LZOa0kCMmCjb0_eIAFLeXeb3YjM');
+        background-size: cover;
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .site-title .site-background{
+        padding-top: 10rem;
+        text-align: center;
+        color: white;
+    }
+    
+    .site-title h1, h3{
+        margin: .3rem;
+    }
+    
+    .site-title .btn{
+        margin: 1.8rem;
+        background: lightblue;
+    }
+    
+    .site-title .btn:hover{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+
+
+
+    
